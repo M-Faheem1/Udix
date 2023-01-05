@@ -3,7 +3,7 @@ import React from 'react'
 function CreativityDescription() {
   return (
     <div className='creativityDescription'>
-      <h4>Creativity & Technology</h4>
+      <h2>Creativity & Technology</h2>
       <p>
       Some networks believe that by only offering 
       a basic tracking system their affiliates can 
@@ -14,15 +14,16 @@ function CreativityDescription() {
       you need based on real-time results
       </p>
       <div className='values'>
-      <h4>Creativity & Technology</h4>
+      <h2>Creativity & Technology</h2>
       <ul className='valuesListing'>
-      <li> Some networks believe that by only offering a basic tracking system</li>
-      <li> Some networks believe that by only offering a basic tracking system</li>
-      <li> Some networks believe that by only offering a basic tracking system</li>
+      <li> <p> Some networks believe that by only offering a basic tracking system </p></li>
+      <li> <p> Some networks believe that by only offering a basic tracking system </p></li>
+      <li> <p> Some networks believe that by only offering a basic tracking system </p></li>
       </ul>
       </div>
       <div className='solutions'>
-      <a href='#'> Check our solutions </a>
+      <a href='#'>
+      <span>Check our solutions </span></a>
       <a href='#'>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#381DDB"/>

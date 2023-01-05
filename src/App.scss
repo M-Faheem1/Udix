@@ -2,6 +2,14 @@
 
 * {
   box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: $primary-color;
+  padding: 8px 1rem;
 }
 
 .header {
@@ -25,8 +33,8 @@
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      margin-bottom: 0;
       margin-left: 7.5rem;
+      margin-bottom: 0;
       & :not(:last-child) {
         margin-right: 3.125rem;
       }
@@ -34,7 +42,6 @@
         a {
           font-size: 14px;
           font-weight: 600;
-          text-decoration: none;
           color: $primary-font-color;
           &:hover,&:active {
             color: $primary-color;
@@ -44,12 +51,6 @@
     }
   }
   .headerBtn {
-    .btn {
-      font-size: 14px;
-      font-weight: 700;
-      color: $primary-color;
-      padding: 8px 1rem;
-    }
     .signUpBtn {
       border: 1px solid $primary-color;
       border-radius: 0%;
@@ -58,15 +59,14 @@
 }
 
 .intro {
-  margin: 6.25rem auto 0;
   text-align: center;
+  margin: 6.25rem auto 0;
   h1 {
     margin: 0 auto;
-    font-size: 3.5rem;
-    font-weight: 700;
-    max-width: 830px;
+    max-width: 840px;
   }
   p {
+    font-size: 1.125rem;
     margin: 2.5rem auto 0;
     max-width: 580px;
   }
@@ -77,11 +77,12 @@
   justify-content: center;
   margin-top: 3.5rem;
   input {
+    font-size: 1rem;
     max-width: 350px;
     margin-right: 1.5rem;
-    font-size: 1rem;
   }
   .btn {
+    color: $secondary-font-color ;
     padding: 1rem 2.375rem;
   }
 }
@@ -92,8 +93,6 @@
     margin: 130px auto 0;
     text-align: center;
     h2 {
-      font-size: 34px;
-      font-weight: 700;
       margin: 0 auto;
     }
     p {
@@ -112,13 +111,14 @@
       text-align: left;
       &:hover {
         background-color: $primary-color;
-        color: #fff;
+        color: $secondary-font-color ;
+        cursor: pointer;
         border: 2px solid transparent;
         .svgWrapper {
-          color: #fff;
+          color: $secondary-font-color ;
         }
         .arrowSvgWrapper {
-          color: #fff;
+          color: $secondary-font-color ;
         }
       }
       &:not(:last-child){
@@ -134,14 +134,9 @@
         }
       }
       h3 {
-        font-size: 1.5rem;
-        font-weight: 800;
         margin: 2.5rem 0 1rem;
       }
       p {
-        text-align: left;
-        font-size: 1rem;
-        font-weight: 400;
         margin-bottom: 2.875rem;
       }
       a {
@@ -177,14 +172,10 @@
       flex: 1;
       padding-left: 3.75rem;
       .creativityDescription {
-        h4 {
-          font-size: 2.125rem;
-          font-weight: 700;
+        h2 {
           margin-top: 42px;
         }
         p {
-          font-size: 1rem;
-          font-weight: 400;
           margin-top: 32px;
         }
         .values {
@@ -217,10 +208,10 @@
         .solutions {
           margin-top: 3rem;
           a {
-            text-decoration: none;
             color: $primary-color;
-            font-size: 1rem;
-            font-weight: 700;
+            span {
+              margin-right: 10px;
+            }
           }
         }
       }
@@ -244,6 +235,7 @@
       }
     }
     p {
+      font-size: 12px;
       max-width: 400px;
       margin-top: 30px;
     }
@@ -262,19 +254,12 @@
             margin-right: 2.5rem;
           }
           a {
-            text-decoration: none;
             color: $primary-font-color;
           }
         }
       }
       .headerBtn {
         margin-left: 5rem;
-        .btn {
-          font-size: 14px;
-          font-weight: 700;
-          color: $primary-color;
-          padding: 8px 1rem;
-        }
         .signUpBtn {
           border: 1px solid $primary-color;
           border-radius: 0%;

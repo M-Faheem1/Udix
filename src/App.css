@@ -1,13 +1,42 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap");
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
 
+a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #381DDB;
+  padding: 8px 1rem;
 }
 
 .header {
@@ -33,8 +62,8 @@ p {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-bottom: 0;
   margin-left: 7.5rem;
+  margin-bottom: 0;
 }
 .header .headerListing ul :not(:last-child) {
   margin-right: 3.125rem;
@@ -42,17 +71,10 @@ p {
 .header .headerListing ul li a {
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
   color: #000;
 }
 .header .headerListing ul li a:hover, .header .headerListing ul li a:active {
   color: #381DDB;
-}
-.header .headerBtn .btn {
-  font-size: 14px;
-  font-weight: 700;
-  color: #381DDB;
-  padding: 8px 1rem;
 }
 .header .headerBtn .signUpBtn {
   border: 1px solid #381DDB;
@@ -60,16 +82,15 @@ p {
 }
 
 .intro {
-  margin: 6.25rem auto 0;
   text-align: center;
+  margin: 6.25rem auto 0;
 }
 .intro h1 {
   margin: 0 auto;
-  font-size: 3.5rem;
-  font-weight: 700;
-  max-width: 830px;
+  max-width: 840px;
 }
 .intro p {
+  font-size: 1.125rem;
   margin: 2.5rem auto 0;
   max-width: 580px;
 }
@@ -80,11 +101,12 @@ p {
   margin-top: 3.5rem;
 }
 .inputField input {
+  font-size: 1rem;
   max-width: 350px;
   margin-right: 1.5rem;
-  font-size: 1rem;
 }
 .inputField .btn {
+  color: #fff;
   padding: 1rem 2.375rem;
 }
 
@@ -96,8 +118,6 @@ p {
   text-align: center;
 }
 .services .cardsHeading h2 {
-  font-size: 34px;
-  font-weight: 700;
   margin: 0 auto;
 }
 .services .cardsHeading p {
@@ -118,6 +138,7 @@ p {
 .services .cardListing .card:hover {
   background-color: #381DDB;
   color: #fff;
+  cursor: pointer;
   border: 2px solid transparent;
 }
 .services .cardListing .card:hover .svgWrapper {
@@ -139,14 +160,9 @@ p {
   width: 100%;
 }
 .services .cardListing .card h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
   margin: 2.5rem 0 1rem;
 }
 .services .cardListing .card p {
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
   margin-bottom: 2.875rem;
 }
 .services .cardListing .card a {
@@ -179,14 +195,10 @@ p {
   flex: 1;
   padding-left: 3.75rem;
 }
-.creativity .creativityAndTechnology .descriptionCol .creativityDescription h4 {
-  font-size: 2.125rem;
-  font-weight: 700;
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription h2 {
   margin-top: 42px;
 }
 .creativity .creativityAndTechnology .descriptionCol .creativityDescription p {
-  font-size: 1rem;
-  font-weight: 400;
   margin-top: 32px;
 }
 .creativity .creativityAndTechnology .descriptionCol .creativityDescription .values h4 {
@@ -218,10 +230,10 @@ p {
   margin-top: 3rem;
 }
 .creativity .creativityAndTechnology .descriptionCol .creativityDescription .solutions a {
-  text-decoration: none;
   color: #381DDB;
-  font-size: 1rem;
-  font-weight: 700;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .solutions a span {
+  margin-right: 10px;
 }
 
 .footer {
@@ -240,6 +252,7 @@ p {
   width: 100%;
 }
 .footer .footerDescription p {
+  font-size: 12px;
   max-width: 400px;
   margin-top: 30px;
 }
@@ -259,17 +272,10 @@ p {
   margin-right: 2.5rem;
 }
 .footer .contactSection .footerListing ul li a {
-  text-decoration: none;
   color: #000;
 }
 .footer .contactSection .footerListing .headerBtn {
   margin-left: 5rem;
-}
-.footer .contactSection .footerListing .headerBtn .btn {
-  font-size: 14px;
-  font-weight: 700;
-  color: #381DDB;
-  padding: 8px 1rem;
 }
 .footer .contactSection .footerListing .headerBtn .signUpBtn {
   border: 1px solid #381DDB;
