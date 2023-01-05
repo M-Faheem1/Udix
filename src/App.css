@@ -1,1 +1,288 @@
-/*# sourceMappingURL=App.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap");
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 4.375rem;
+  margin-top: 3.4375rem;
+  justify-content: space-between;
+}
+.header .headerListing {
+  display: flex;
+  align-items: center;
+}
+.header .headerListing .svgwrapper {
+  width: 70px;
+  height: 26px;
+}
+.header .headerListing .svgwrapper svg {
+  height: 100%;
+  width: 100%;
+}
+.header .headerListing ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-left: 7.5rem;
+}
+.header .headerListing ul :not(:last-child) {
+  margin-right: 3.125rem;
+}
+.header .headerListing ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+.header .headerListing ul li a:hover, .header .headerListing ul li a:active {
+  color: #381DDB;
+}
+.header .headerBtn .btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #381DDB;
+  padding: 8px 1rem;
+}
+.header .headerBtn .signUpBtn {
+  border: 1px solid #381DDB;
+  border-radius: 0%;
+}
+
+.intro {
+  margin: 6.25rem auto 0;
+  text-align: center;
+}
+.intro h1 {
+  margin: 0 auto;
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 830px;
+}
+.intro p {
+  margin: 2.5rem auto 0;
+  max-width: 580px;
+}
+
+.inputField {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+.inputField input {
+  max-width: 350px;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+}
+.inputField .btn {
+  padding: 1rem 2.375rem;
+}
+
+.services {
+  padding: 0 11.25rem;
+}
+.services .cardsHeading {
+  margin: 130px auto 0;
+  text-align: center;
+}
+.services .cardsHeading h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.services .cardsHeading p {
+  max-width: 970px;
+  margin: 40px auto 0;
+}
+.services .cardListing {
+  display: flex;
+  margin-top: 3.75rem;
+}
+.services .cardListing .card {
+  position: relative;
+  padding: 1.875rem;
+  width: 33%;
+  border: 2px solid #381DDB;
+  text-align: left;
+}
+.services .cardListing .card:hover {
+  background-color: #381DDB;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.services .cardListing .card:hover .svgWrapper {
+  color: #fff;
+}
+.services .cardListing .card:hover .arrowSvgWrapper {
+  color: #fff;
+}
+.services .cardListing .card:not(:last-child) {
+  margin-right: 20px;
+}
+.services .cardListing .card .svgWrapper {
+  height: 70px;
+  width: 70px;
+  color: #381DDB;
+}
+.services .cardListing .card .svgWrapper svg {
+  height: 100%;
+  width: 100%;
+}
+.services .cardListing .card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 2.5rem 0 1rem;
+}
+.services .cardListing .card p {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2.875rem;
+}
+.services .cardListing .card a {
+  color: #381DDB;
+}
+.services .cardListing .card a .arrowSvgWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 20px;
+  color: #381DDB;
+}
+
+.creativity {
+  margin-top: 8.125rem;
+  padding: 0 11.25rem;
+}
+.creativity .creativityAndTechnology .imageCol {
+  flex: 0 0 490px;
+}
+.creativity .creativityAndTechnology .imageCol .imageWrapper {
+  width: 490px;
+  height: auto;
+}
+.creativity .creativityAndTechnology .imageCol .imageWrapper img {
+  width: 100%;
+  height: 100%;
+}
+.creativity .creativityAndTechnology .descriptionCol {
+  flex: 1;
+  padding-left: 3.75rem;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription h4 {
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin-top: 42px;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 32px;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .values h4 {
+  margin: 3.75rem 0 2rem;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .values ul {
+  list-style: none;
+  padding: 0;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .values ul li {
+  position: relative;
+  padding-left: 1rem;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .values ul li::before {
+  position: absolute;
+  content: "•";
+  color: #381DDB;
+  font-weight: bold;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  border-radius: 50%;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .values ul li::before:not(:last-child) {
+  margin-bottom: 16px;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .solutions {
+  margin-top: 3rem;
+}
+.creativity .creativityAndTechnology .descriptionCol .creativityDescription .solutions a {
+  text-decoration: none;
+  color: #381DDB;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  padding: 3.9375rem 6.25rem;
+  margin-top: 11.875rem;
+  justify-content: space-between;
+  background-color: rgba(34, 34, 34, 0.031372549);
+}
+.footer .footerDescription .svg-wrapper {
+  width: 70px;
+  height: 26px;
+}
+.footer .footerDescription .svg-wrapper .svg {
+  height: 100%;
+  width: 100%;
+}
+.footer .footerDescription p {
+  max-width: 400px;
+  margin-top: 30px;
+}
+.footer .contactSection {
+  display: flex;
+  flex-direction: column;
+}
+.footer .contactSection .footerListing {
+  display: flex;
+  align-items: baseline;
+}
+.footer .contactSection .footerListing ul {
+  display: flex;
+  list-style-type: none;
+}
+.footer .contactSection .footerListing ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.footer .contactSection .footerListing ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .contactSection .footerListing .headerBtn {
+  margin-left: 5rem;
+}
+.footer .contactSection .footerListing .headerBtn .btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #381DDB;
+  padding: 8px 1rem;
+}
+.footer .contactSection .footerListing .headerBtn .signUpBtn {
+  border: 1px solid #381DDB;
+  border-radius: 0%;
+}
+.footer .contactSection .socialMediaIcons {
+  margin-top: 2.75rem;
+}
+.footer .contactSection .socialMediaIcons ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.footer .contactSection .socialMediaIcons ul :not(:last-child) {
+  margin-right: 2.25rem;
+}/*# sourceMappingURL=App.css.map */
