@@ -17,9 +17,9 @@ function Header() {
         </div>
         <HeaderListItems/>
       </div>
-        <div className='headerButtons'>
+      <div className='headerButtons'>
         <Buttons/>
-        </div>
+      </div>
     </div>
   )
 }

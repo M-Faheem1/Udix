@@ -8,8 +8,8 @@ function Intro() {
         Projects the Right Way.
       </h1>
       <p>
-      udix is the world’s first smart workspace. We bring all your team’s
-      content together while letting you use the tools you love.
+        udix is the world’s first smart workspace. We bring all your team’s
+        content together while letting you use the tools you love.
       </p>
       <InputField/>
     </div>

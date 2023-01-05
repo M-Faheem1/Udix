@@ -6,10 +6,10 @@ function Creativity() {
   return (
     <div className='creativity'>
       <div className='row creativityAndTechnology'>
-        <div className='col-6 imageCol'>
+        <div className='col-6 creativityAndTechnologyLeft'>
           <Image/>
         </div>
-        <div className='col-6 descriptionCol'>
+        <div className='col-6 creativityAndTechnologyRight'>
           <CreativityDescription/>
         </div>
       </div>
