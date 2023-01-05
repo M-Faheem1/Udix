@@ -6,9 +6,12 @@ body {
 
 .btn {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: $primary-color;
   padding: 8px 1rem;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .header {
@@ -53,6 +56,15 @@ body {
     .signUpBtn {
       border: 1px solid $primary-color;
       border-radius: 0%;
+        &:active  {
+          color: $primary-color;
+        }
+      }
+    .signInBtn {
+      border: none;
+      &:active  {
+        color: $primary-color;
+      }
     }
   }
 }
@@ -83,11 +95,14 @@ body {
       font-size: 1rem;
       width: 100%;
       height: 100%;
+      box-shadow: none;
     }
   }
   .btn {
     color: $secondary-font-color ;
     padding: 1rem 2.375rem;
+    border-radius: 4px;
+    height: 50px;
   }
 }
 
@@ -175,42 +190,46 @@ body {
       background: #00000075;
     }
   }
-  .adverisment {
-    position: absolute;
+  .statsWrapper {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
     top: 120px;
-    color: $secondary-font-color;
-    text-align: center;
-    span {
-      font-size: 4rem;
-      font-weight: 800;
+    width: 100%;
+    .adverisment {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      width: 100%;
+      color: $secondary-font-color;
+      span {
+        font-size: 4rem;
+        font-weight: 800;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1rem 0 0;
+      }
+      .clicks {
+        padding-left: 13.5rem;
+      }
+      .advertisers {
+        padding-right: 13.5rem;
+      }
     }
-    p {
+    .btn {
       font-size: 1rem;
       font-weight: 500;
-      margin: 1rem 0 0;
+      color: $secondary-font-color;
+      font-family: $secondary-font;
+      background-color: $primary-color;
+      margin-top: 6.25rem;
+      padding: 1rem 1.5rem;
+      border: transparent;
+      border-radius: 4px;
     }
-    .clicks {
-      padding-left: 13.5rem;
-    }
-    .advertisers {
-      padding-right: 13.5rem;
-    }
-  }
-  .btn {
-    position: absolute;
-    font-size: 1rem;
-    font-weight: 500;
-    color: $secondary-font-color;
-    font-family: $secondary-font;
-    background-color: $primary-color;
-    bottom: 118px;
-    left: 645px;
-    margin-top: 6.25rem;
-    padding: 1rem 1.5rem;
-    border: transparent;
   }
 }
 
@@ -252,12 +271,12 @@ body {
               &::before {
                 position: absolute;
                 content: "";
-                color: $primary-color;
-                font-weight: bold;
-                display: inline-block; 
+                display: block;
+                background-color: $primary-color;
                 width: 8px;
                 height: 8px;
                 left: 0;
+                top: 8px;
                 border-radius: 50%;
                 &:not(:last-child)  {
                   margin-bottom: 1rem;

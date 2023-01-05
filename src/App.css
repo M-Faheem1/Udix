@@ -32,9 +32,12 @@ body {
 
 .btn {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #381DDB;
   padding: 8px 1rem;
+}
+.btn:hover {
+  color: #381DDB;
 }
 
 .header {
@@ -78,6 +81,15 @@ body {
   border: 1px solid #381DDB;
   border-radius: 0%;
 }
+.header .headerBtn .signUpBtn:active {
+  color: #381DDB;
+}
+.header .headerBtn .signInBtn {
+  border: none;
+}
+.header .headerBtn .signInBtn:active {
+  color: #381DDB;
+}
 
 .intro {
   text-align: center;
@@ -107,10 +119,13 @@ body {
   font-size: 1rem;
   width: 100%;
   height: 100%;
+  box-shadow: none;
 }
 .inputFieldWrapper .btn {
   color: #fff;
   padding: 1rem 2.375rem;
+  border-radius: 4px;
+  height: 50px;
 }
 
 .services {
@@ -198,42 +213,46 @@ body {
   top: 0;
   background: rgba(0, 0, 0, 0.4588235294);
 }
-.reach .adverisment {
+.reach .statsWrapper {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  align-items: center;
+  top: 120px;
+  width: 100%;
+}
+.reach .statsWrapper .adverisment {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  top: 120px;
-  color: #fff;
   text-align: center;
+  width: 100%;
+  color: #fff;
 }
-.reach .adverisment span {
+.reach .statsWrapper .adverisment span {
   font-size: 4rem;
   font-weight: 800;
 }
-.reach .adverisment p {
+.reach .statsWrapper .adverisment p {
   font-size: 1rem;
   font-weight: 500;
   margin: 1rem 0 0;
 }
-.reach .adverisment .clicks {
+.reach .statsWrapper .adverisment .clicks {
   padding-left: 13.5rem;
 }
-.reach .adverisment .advertisers {
+.reach .statsWrapper .adverisment .advertisers {
   padding-right: 13.5rem;
 }
-.reach .btn {
-  position: absolute;
+.reach .statsWrapper .btn {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
   font-family: "Raleway", sans-serif;
   background-color: #381DDB;
-  bottom: 118px;
-  left: 645px;
   margin-top: 6.25rem;
   padding: 1rem 1.5rem;
   border: transparent;
+  border-radius: 4px;
 }
 
 .creativity {
@@ -275,12 +294,12 @@ body {
 .creativity .creativityAndTechnology .creativityAndTechnologyRight .creativityDescription .values ul li::before {
   position: absolute;
   content: "";
-  color: #381DDB;
-  font-weight: bold;
-  display: inline-block;
+  display: block;
+  background-color: #381DDB;
   width: 8px;
   height: 8px;
   left: 0;
+  top: 8px;
   border-radius: 50%;
 }
 .creativity .creativityAndTechnology .creativityAndTechnologyRight .creativityDescription .values ul li::before:not(:last-child) {
