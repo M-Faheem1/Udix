@@ -5,8 +5,8 @@ function Reach() {
     <div className='reach'>
       <div className='imageWrapper'>
         <img src='./Assets/images/Reach.png' alt='reach'></img>
+        <div className='overlay'></div>
       </div>
-      <div className='overlay'></div>
       <div className='adverisment'>
         <div className='clicks'>
         <span>1,000 M</span>
