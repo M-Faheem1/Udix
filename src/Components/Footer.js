@@ -64,6 +64,12 @@ function Footer() {
             </a>
           </li>
         </ul>
+        <p>
+        udix is a market-leading provider of digital 
+        marketing services, using proprietary tools 
+        and methodologies to generate high-value 
+        engagement for our customers.
+        </p>
       </div>
       </div>
     </div>
