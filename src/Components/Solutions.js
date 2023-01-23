@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Services from './Services'
 
 function Solutions() {
+  const [cardHeading, setcardHeading] = useState("Web Services")
+  console.log(cardHeading)
+  const [changedHeading, setChangeHeading] = useState(false)
+
   return (
     <div className='services'>
       <div className='cardsHeading'>
@@ -12,7 +16,12 @@ function Solutions() {
           solutions together with a team of creative experts.
         </p>
       </div>
-      <Services/>
+      <Services
+      cardHeading = {cardHeading}
+      setcardHeading = {setcardHeading}
+      changedHeading = {changedHeading}
+      setChangeHeading = {setChangeHeading}
+      />
     </div>
   )
 }

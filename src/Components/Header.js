@@ -4,6 +4,8 @@ import Buttons from './Buttons'
 import ResponsiveNavbar from './ResponsiveNavbar'
 
 function Header() {
+// const [responsiveNavBar, setResponsiveNavBar] = useState(false);
+
   return (
     <div className='header'>
       <div className='headerListing'>

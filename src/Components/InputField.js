@@ -1,12 +1,31 @@
 import React from 'react'
 
-function InputField() {
+function InputField({
+    text,
+    parentValue,
+    isChildText,
+    setIsChildText,
+    setParagraph
+  }) {
+
+  const handleButton = () => {
+    if (!isChildText) {
+      setParagraph('Value is changed through boolean');
+      setIsChildText(!isChildText);
+    } else {
+      setParagraph(parentValue);
+      setIsChildText(!isChildText);
+    }
+  }
+
   return (
     <div className='inputFieldWrapper'>
       <div className='inputWrapper'>
-        <input type="email" class="form-control" placeholder="Email"/>
+        <input type="email" className="form-control" placeholder="Email"/>
       </div>
-      <button className='btn btn-primary'>Subscribe</button>
+      <button 
+      onClick={handleButton}
+      className='btn btn-primary'>{text}</button>
     </div>
   )
 }
