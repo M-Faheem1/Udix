@@ -279,7 +279,7 @@ body {
   @media screen and (max-width:1280px) {
     padding: 0 6.25rem;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:991px) {
     padding: 0 4.375rem;
   } 
   @media screen and (max-width:575px) {
@@ -290,6 +290,9 @@ body {
     text-align: center;
     @media screen and (max-width:1280px) {
       margin: 6.25rem auto 0;
+    }
+    @media screen and (max-width:991px) {
+      margin: 5rem auto 0;
     }
     @media screen and (max-width:768px) {
       margin: 5rem auto 0;
@@ -432,6 +435,9 @@ body {
 .reach {
   position: relative;
   margin-top: 8.125rem;
+  @media screen and (max-width:1280px) {
+    margin-top: 6.25rem;
+  }  
   @media screen and (max-width:991px) {
     margin-top: 6.25rem;
   }
@@ -466,24 +472,24 @@ body {
     flex-direction: column;
     position: absolute;
     align-items: center;
-    top: 120px;
+    top: 5.625rem;
     width: 100%;
+    @media screen and (max-width:1280px) {
+      top: 4.375rem;
+    }
     @media screen and (max-width:991px) {
-      top: 2.125rem;
+      top: 3.125rem;
       left: 50%;
-      padding: 0 1.25rem;
       transform: translateX(-50%);
     }
     @media screen and (max-width:768px) {
       top: 2.125rem;
       left: 50%;
-      padding: 0 1.25rem;
       transform: translateX(-50%);
     }
     @media screen and (max-width:575px) {
       top: 2.125rem;
       left: 50%;
-      padding: 0 1.25rem;
       transform: translateX(-50%);
     }
     .adverisment {
@@ -491,10 +497,13 @@ body {
       justify-content: space-between;
       text-align: center;
       width: 100%;
-      padding: 0 13.5rem;
+      padding: 0 11.5rem;
       color: $secondary-font-color;
+      @media screen and (max-width:1280px) {
+        padding: 0 5.625rem;
+      }
       @media screen and (max-width:991px) {
-        padding: 0 4.375rem;
+        padding: 0 3rem;
       }
       @media screen and (max-width:768px) {
         padding: 0;
@@ -531,6 +540,9 @@ body {
         @media screen and (max-width:1280px) {
           margin: .625rem 0 0;
         }
+        @media screen and (max-width:1280px) {
+          margin: 0;
+        }
         @media screen and (max-width:768px) {
           margin: .25rem 0 0;
         }
@@ -550,10 +562,11 @@ body {
       border: transparent;
       border-radius: 4px;
       @media screen and (max-width:1280px) {
-        margin-top: 4.375rem;
+        margin-top: 3.75rem;
       }  
       @media screen and (max-width:991px) {
         font-size: .875rem;
+        margin-top: 3rem;
         padding: .75rem 1.25rem;
       }
       @media screen and (max-width:768px) {
@@ -570,11 +583,15 @@ body {
 .creativityAndTechnology {
   display: flex;
   margin-top: 8.125rem;
-  padding: 0 11.25rem;
+  padding: 0 9.25rem;
   @media screen and (max-width:1280px) {
-    padding: 0 6.25rem;
+    padding: 0 6rem;
     margin-top: 8.125rem;
 
+  }
+  @media screen and (max-width:991px) {
+    padding: 0 4.375rem;
+    margin-top: 5rem;
   }
   @media screen and (max-width:768px) {
     padding: 0 4.375rem;
@@ -587,7 +604,10 @@ body {
   }  
   .creativityAndTechnologyLeft {
     flex: 0 0 490px;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1280px) {
+      flex: 0 0 440px;
+    }
+    @media screen and (max-width:991px) {
       flex: 0 0 304px;
     }
     @media screen and (max-width:575px) {
@@ -609,6 +629,12 @@ body {
   .creativityAndTechnologyRight {
     flex: 1;
     padding-left: 3.75rem;
+    @media screen and (max-width:1280px) {
+      padding-left: 2.75rem;
+    }
+    @media screen and (max-width:991px) {
+      padding-left: 1.5rem;
+    }
     @media screen and (max-width:575px) {
       padding-left: 0;
     }
@@ -618,7 +644,10 @@ body {
         @media screen and (max-width:1280px) {
           font-size: 1.75rem;
           margin-top: 0;
-        }  
+        }
+        @media screen and (max-width:991px) {
+          font-size: 1.25rem;
+        }
         @media screen and (max-width:768px) {
           font-size: 1.25rem;
         }
@@ -628,17 +657,24 @@ body {
       }
       p {
         margin: 0;
+        @media screen and (max-width:991px) {
+          font-size: .875rem;
+        }
         @media screen and (max-width:768px) {
           font-size: .75rem;
         }
       }
       .values {
         h2 {
-          margin: 3.75rem 0 2rem;
+          margin: 2.75rem 0 2rem;
           @media screen and (max-width:1280px) {
-            margin: 2.5rem 0 1.5rem; 
+            margin: 2rem 0 1rem; 
           }
-          @media screen and (max-width:768px) {
+          @media screen and (max-width:991px) {
+            font-size: 1.25rem;
+            margin: 1rem 0 .75rem; 
+          }
+            @media screen and (max-width:768px) {
             margin: 1rem 0; 
           }
           @media screen and (max-width:575px) {
@@ -648,6 +684,7 @@ body {
         ul {
           list-style: none;
           padding: 0;
+          margin-bottom: 0;
           li {
             position: relative;
             padding-left: 1rem;
@@ -667,12 +704,15 @@ body {
               @media screen and (max-width:1280px) {
                 margin-bottom: .875rem;
               } 
+              @media screen and (max-width:991px) {
+                margin-bottom: .625rem;
+              }
             }
           }
         }
       }
       .solutions {
-        margin-top: 3rem;
+        margin-top: 2rem;
         @media screen and (max-width:1280px) {
           margin-top: 1.5rem;
         } 
@@ -725,6 +765,9 @@ body {
       font-size: .75rem;
       max-width: 400px;
       margin-top: 1.875rem;
+      @media screen and (max-width:1280px) {
+        max-width: 340px;
+      }
       @media screen and (max-width:575px) {
         display: none;
       }
@@ -750,6 +793,9 @@ body {
         li {
           &:not(:last-child) {
             margin-right: 2.5rem;
+            @media screen and (max-width:1280px) {
+              margin-right: 1.5rem;
+            }
             @media screen and (max-width:768px) {
               margin-right: 1.5rem;
             }
@@ -766,6 +812,9 @@ body {
       }
       .headerBtn {
         margin-left: 5rem;
+        @media screen and (max-width:1280px) {
+          margin-left: 1.5rem;
+        }
         @media screen and (max-width:768px) {
           margin-left: 2.5rem;
         }

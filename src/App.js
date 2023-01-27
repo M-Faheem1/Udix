@@ -14,7 +14,10 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Intro heading={heading} subheading={{greating:", second prop"}}/>
+      <Intro 
+        heading={heading} 
+        subheading={{greating:", second prop"}}
+      />
       <Solutions/>
       <Reach/>
       <Creativity/>
